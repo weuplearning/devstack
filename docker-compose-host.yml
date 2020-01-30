@@ -18,6 +18,7 @@ services:
       - ${DEVSTACK_WORKSPACE}/src:/edx/src:cached
   lms:
     volumes:
+      - ${DEVSTACK_WORKSPACE}/media:/edx/var/edxapp/media:cached
       - ${DEVSTACK_WORKSPACE}/edx-platform:/edx/app/edxapp/edx-platform:cached
       - edxapp_media:/edx/var/edxapp/media
       - edxapp_node_modules:/edx/app/edxapp/edx-platform/node_modules
@@ -29,6 +30,7 @@ services:
       - ${DEVSTACK_WORKSPACE}/src:/edx/src:cached
   studio:
     volumes:
+      - ${DEVSTACK_WORKSPACE}/media:/edx/var/edxapp/media:cached
       - ${DEVSTACK_WORKSPACE}/edx-platform:/edx/app/edxapp/edx-platform:cached
       - edxapp_media:/edx/var/edxapp/media
       - edxapp_node_modules:/edx/app/edxapp/edx-platform/node_modules
