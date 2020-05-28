@@ -19,7 +19,7 @@ cd devstack
 git checkout open-release/juniper.master
 
 echo "#Starting deployment"
-export OPENEDX_RELEASE=juniper.master
+export OPENEDX_RELEASE=
 make dev.checkout
 make dev.clone
 make dev.provision
