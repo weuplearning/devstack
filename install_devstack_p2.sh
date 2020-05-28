@@ -16,10 +16,10 @@ cd devstack_files
 echo "#Cloning devstack"
 git clone https://github.com/weuplearning/devstack
 cd devstack
-git checkout open-release/juniper.alpha1
+git checkout open-release/juniper.rc3
 
 echo "#Starting deployment"
-export OPENEDX_RELEASE=juniper.alpha1
+export OPENEDX_RELEASE=juniper.rc3
 make dev.checkout
 make dev.clone
 make dev.provision
