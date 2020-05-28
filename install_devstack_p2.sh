@@ -19,3 +19,12 @@ cd devstack
 git checkout master
 
 echo "#Starting deployment"
+export OPENEDX_RELEASE=juniper.master
+make dev.checkout
+make dev.clone
+make dev.provision
+
+echo '#Lauching devstack'
+make lms-restart
+make studio-restart
+make dev.up
