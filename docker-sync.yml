@@ -40,7 +40,12 @@ syncs:
     src: '../gradebook/'
     sync_excludes: [ '.git', '.idea' ]
 
-  program-manager-sync:
+  program-console-sync:
     host_disk_mount_mode: 'cached'
-    src: '../frontend-app-program-manager/'
+    src: '../frontend-app-program-console/'
+    sync_excludes: [ '.git', '.idea' ]
+
+  frontend-app-learning-sync:
+    host_disk_mount_mode: 'cached'
+    src: '../frontend-app-learning/'
     sync_excludes: [ '.git', '.idea' ]
