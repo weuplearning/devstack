@@ -15,6 +15,7 @@ cd devstack_files
 
 echo "#Cloning devstack"
 git clone https://github.com/weuplearning/devstack
+cd devstack
 
 echo "#Starting deployment"
 export OPENEDX_RELEASE=
