@@ -24,13 +24,6 @@ make dev.checkout
 make dev.clone
 make dev.provision
 
-cd ~/edx/devstack_files/devstack/
-docker cp cms.yml edx.devstack.studio:/edx/etc/ &&
-docker cp lms.yml edx.devstack.studio:/edx/etc/ &&
-docker cp studio.yml edx.devstack.studio:/edx/etc/ &&
-docker cp cms.yml edx.devstack.lms:/edx/etc/ &&
-docker cp lms.yml edx.devstack.lms:/edx/etc/
-
 echo '#Lauching devstack'
 make lms-restart
 make studio-restart
