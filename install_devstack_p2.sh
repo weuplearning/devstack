@@ -20,7 +20,7 @@ cd devstack
 git checkout master
 
 echo "#Starting deployment"
-export OPENEDX_RELEASE=master
+export OPENEDX_RELEASE=
 make dev.checkout
 make dev.clone
 make dev.provision
